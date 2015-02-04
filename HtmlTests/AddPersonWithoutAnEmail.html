@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="https://alphaex.insynctiveapps.com/" />
+<title>AddPersonWithoutAnEmail</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">AddPersonWithoutAnEmail</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/Insynctive.Hub/Login.aspx?ReturnUrl=%2fInsynctive.Hub%2f</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=login_UserName_I</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=login_UserName_I</td>
+	<td>bpetrovski@insynctive.com</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=PasswordLabel</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=login_Password_I</td>
+	<td>apple$$$2405</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>name=login$Login</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[@id='body_body_mainTab_TPTCR_btnAddPerson_0_CD']/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='body_body_mainTab_TPTCR_btnAddPerson_0_CD']/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=body_body_popupAddPerson_txtFirstName_I</td>
+	<td>Test</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=body_body_popupAddPerson_txtLastName_I</td>
+	<td>Automated</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='body_body_popupAddPerson_btnAddHRAdmin_CD']/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=body_lblPersonName</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=body_lblPersonName</td>
+	<td>Test Automated</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=popupCustom_TPCHm1_imgClose</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=body_body_mainTab_TPTCR_btnAddPerson_0</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=body_body_popupAddPerson_txtFirstName_I</td>
+	<td>Test</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=body_body_popupAddPerson_txtEmail_I</td>
+	<td>test@gmail.com</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='body_body_popupAddPerson_btnAddHRAdmin_CD']/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=body_body_popupAddPerson_txtLastName_EC</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=body_body_popupAddPerson_txtLastName_EC</td>
+	<td>Last Name is mandatory</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=body_body_popupAddPerson_txtFirstName_I</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=body_body_popupAddPerson_txtLastName_I</td>
+	<td>Test</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=body_body_popupAddPerson_btnAddHRAdmin_CD</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=body_body_popupAddPerson_txtFirstName_EC</td>
+	<td>First Name is mandatory</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='body_body_popupAddPerson_ASPxButton1_CD']/span</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>
